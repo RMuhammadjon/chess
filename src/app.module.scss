@@ -1,0 +1,106 @@
+.navbar {
+  width: 100%;
+  height: max-content;
+  position: fixed;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+    i {
+      margin-bottom: 20px;
+      transform: rotate(-45deg);
+      color: var(--black) !important;
+    }
+  }
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 10%;
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .board {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    background-color:  white;
+    border-collapse: collapse;
+  }
+
+  .captures {
+    width: max-content;
+    display: flex;
+    font-family: "NeueMachina-Regular";
+    width: 20%;
+    h1 {
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 60px;
+      text-align: center;
+    }
+    p {
+      color: var(--primary);
+      font-family: "NeueMachina-Ultrabold";
+      font-size: 60px;
+      -webkit-text-stroke: 3px black;
+    }
+  }
+  .btn {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    button {
+      font-family: "NeueMachina-Light";
+      border-radius: 10px;
+      border: 2.5px solid black;
+      padding: 19px 30px;
+      font-size: 27px;
+      font-style: normal;
+      font-weight: 400;
+      background: rgb(255, 255, 255);
+      transition: 0.3s ease;
+      &:hover {
+        position: relative;
+        transform: translate(6px, -4px);
+        background:  rgb(151, 118, 8);
+        color: white;
+        box-shadow: -4px 6px 0px 1px #000;
+      }
+    }
+  }
+}
+.info {
+  font-family: "NeueMachina-Regular";
+  padding: 0 8%;
+  font-size: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .title {
+    text-align: center;
+    margin-top: 1px;
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    gap: 20px;
+    .rook {
+      color: rgb(151, 118, 8);
+      -webkit-text-stroke: 1px var(--black);
+    }
+  }
+  .footer {
+    margin-bottom: 50px;
+  }
+}
